@@ -1,0 +1,140 @@
+.main {
+  min-width: 320px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: Rm(130); }
+
+body {
+  background: #fff; }
+
+.header {
+  height: Rm(80);
+  padding: Rm(10) 0 0 Rm(20); }
+  .header img {
+    display: block;
+    height: Rm(60); }
+
+.nav {
+  height: 60px;
+  background: #1c71ff; }
+
+.nav-bar {
+  height: Rm(80); }
+  .nav-bar h3 {
+    font-weight: normal;
+    text-align: center;
+    line-height: Rm(80);
+    font-size: Rm(30);
+    font-family: "Microsoft yahei";
+    overflow: hidden; }
+    .nav-bar h3 .return {
+      float: left;
+      width: Rm(80);
+      height: Rm(80);
+      background: url(./i/return.png) no-repeat center center;
+      background-size: Rm(30) Rm(30); }
+    .nav-bar h3 .more {
+      float: right;
+      width: Rm(80);
+      height: Rm(80);
+      background: url(./i/mores.png) no-repeat center center;
+      background-size: Rm(30) Rm(30); }
+    .nav-bar h3 .unit {
+      float: left;
+      width: Rm(120);
+      height: Rm(80);
+      line-height: Rm(80);
+      font-size: Rm(24);
+      font-family: "Microsoft yahei";
+      color: #666;
+      text-align: left;
+      padding-left: Rm(30); }
+    .nav-bar h3 .fr {
+      float: right; }
+    .nav-bar h3 .hide {
+      display: block;
+      visibility: hidden; }
+
+.nav-list {
+  height: Rm(80); }
+  .nav-list a {
+    color: #7f90b8;
+    float: left;
+    text-align: center;
+    line-height: Rm(80);
+    border-bottom: Rm(1) solid #7f90b8;
+    font-family: "Microsoft yahei"; }
+  .nav-list .active {
+    color: #1d5fff;
+    border-bottom: Rm(1) solid #1d5fff; }
+
+.tab-bar {
+  height: Rm(120);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #f5f5f5;
+  border-top: Rm(1) solid #eee; }
+  .tab-bar a {
+    float: left;
+    text-align: center;
+    color: #7f90b8;
+    font-family: "Microsoft yahei";
+    font-size: Rm(26);
+    padding-top: Rm(20);
+    height: Rm(100);
+    line-height: Rm(60); }
+    .tab-bar a i {
+      display: block;
+      width: Rm(40);
+      height: Rm(40);
+      margin: 0 auto;
+      border-radius: 50%; }
+    .tab-bar a .home {
+      background: url(./i/home.png) no-repeat center center;
+      background-size: Rm(40) Rm(40); }
+    .tab-bar a .market {
+      background: url(./i/market.png) no-repeat center center;
+      background-size: Rm(50) Rm(50); }
+    .tab-bar a .trade {
+      background: url(./i/trade.png) no-repeat center center;
+      background-size: Rm(40) Rm(40); }
+    .tab-bar a .wallet {
+      background: url(./i/wallet.png) no-repeat center center;
+      background-size: Rm(40) Rm(40); }
+    .tab-bar a .user {
+      background: url(./i/user.png) no-repeat center center;
+      background-size: Rm(40) Rm(40); }
+  .tab-bar .active {
+    color: #1d5fff; }
+    .tab-bar .active .home {
+      background: url(./i/homes.png) no-repeat center center;
+      background-size: Rm(40) Rm(40); }
+    .tab-bar .active .market {
+      background: url(./i/markets.png) no-repeat center center;
+      background-size: Rm(50) Rm(50); }
+    .tab-bar .active .trade {
+      background: url(./i/trades.png) no-repeat center center;
+      background-size: Rm(40) Rm(40); }
+    .tab-bar .active .wallet {
+      background: url(./i/wallets.png) no-repeat center center;
+      background-size: Rm(40) Rm(40); }
+    .tab-bar .active .user {
+      background: url(./i/users.png) no-repeat center center;
+      background-size: Rm(40) Rm(40); }
+
+.one-list a {
+  width: 100%; }
+
+.two-list a {
+  width: 50%; }
+
+.three-list a {
+  width: 33.3%; }
+
+.four-list a {
+  width: 25%; }
+
+.five-list a {
+  width: 20%; }

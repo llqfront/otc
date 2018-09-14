@@ -1,0 +1,37 @@
+.market-list {
+  background: #ccc; }
+  .market-list ul li {
+    margin-bottom: Rm(2);
+    height: Rm(100);
+    background: #fff;
+    overflow: hidden;
+    padding: 0 Rm(30); }
+    .market-list ul li .percent {
+      float: right;
+      background: #e83131;
+      width: Rm(100);
+      height: Rm(35);
+      line-height: Rm(35);
+      margin-top: Rm(32.5);
+      text-align: center;
+      color: #fff;
+      font-size: Rm(24);
+      font-family: Arial;
+      border-radius: Rm(6); }
+    .market-list ul li .m-l-info {
+      padding: Rm(20) Rm(150) 0 0; }
+      .market-list ul li .m-l-info p {
+        height: Rm(30);
+        overflow: hidden; }
+        .market-list ul li .m-l-info p span {
+          float: left;
+          height: Rm(30);
+          line-height: Rm(30);
+          font-family: "Microsoft yahei";
+          font-size: Rm(20);
+          color: #666; }
+          .market-list ul li .m-l-info p span b {
+            font-size: Rm(22);
+            color: #333; }
+        .market-list ul li .m-l-info p .fr {
+          float: right; }

@@ -1,0 +1,256 @@
+@charset "UTF-8";
+$ff:"Microsoft yahei";
+$color:#7f90b8;
+$c3:#333;
+$c6:#666;
+.wallet-info {
+    .wallet-all {
+        margin:Rm(15) Rm(20) 0;
+        background: #eee;
+        height:Rm(180);
+        border-radius: Rm(10);
+        position: relative;
+        h3 {
+            font-weight: normal;
+            text-align: center;
+            line-height: Rm(26);
+            padding-top:Rm(30);
+            font-family: $ff;
+        }
+        h4 {
+            font-weight: normal;
+            text-align: center;
+            line-height: Rm(20);
+            padding-top:Rm(30);
+            font-family: $ff;
+        }
+        h5 {
+            font-weight: normal;
+            text-align: center;
+            line-height: Rm(20);
+            padding-top:Rm(30);
+            font-family: $ff;
+        }
+        a {
+            position: absolute;
+            right:Rm(20);
+            top:Rm(10);
+            z-index: 10;
+            width:Rm(40);
+            height:Rm(40);
+            background: url(./i/hide.png) no-repeat center center;
+            background-size: Rm(40) Rm(40);
+        }
+        .show {
+            background: url(./i/show.png) no-repeat center center;
+            background-size: Rm(40) Rm(40);
+        }
+    }
+    .wallet-nav {
+        height:Rm(120);
+        a {
+            float:left;
+            text-align: center;
+            color:#7f90b8;
+            font-family: $ff;
+            font-size:Rm(26);
+            padding-top: Rm(20);
+            height:Rm(100);
+            line-height: Rm(60);
+            i {
+                display: block;
+                width:Rm(40);
+                height:Rm(40);
+                margin:0 auto;
+                background:#eee;
+                border-radius: 50%;
+            }
+            // .recharge {
+            //     background: url(./i/recharge.png) no-repeat center center;
+            //     background-size:Rm(40) Rm(40);
+            // }
+            // .withdraw {
+            //     background: url(./i/withdraw.png) no-repeat center center;
+            //     background-size:Rm(40) Rm(40);
+            // }
+        }
+    }
+    .wallet-line {
+        height:Rm(10);
+        background: #e5e5e5;
+    }
+    .wallet-search {
+        margin:Rm(15) Rm(20) 0;
+        .search {
+            float:left;
+            width:40%;
+            height:Rm(50);
+            input {
+                display: block;
+                height:Rm(30);
+                padding:Rm(6) Rm(15);
+                border:none;
+                border-radius: Rm(6);
+                background: none;
+            }
+        }
+        .hidemin {
+            float:right;
+            width:60%;
+            height:Rm(50);
+            label {
+                float:right;
+                height:Rm(50);
+                line-height: Rm(50);
+                font-size:Rm(26);
+                color:#7f90b8;
+            }
+            input {
+                float:right;
+                width:Rm(25);
+                height:Rm(25);
+                margin:Rm(13) Rm(15) 0 0;
+            }
+        }
+    }
+    .wallet-zc-lst {
+        margin:Rm(15) Rm(20) 0;
+        ul {
+            li {
+                height:Rm(240);
+                border:1px solid #eee;
+                border-radius: Rm(6);
+                overflow: hidden;
+                margin-top:Rm(15);
+                .showinfo {
+                    height:Rm(180);
+                    padding:0 Rm(15);
+                    position: relative;
+                    h3 {
+                        line-height: Rm(60);
+                        font-size:Rm(24);
+                        color:$c6;
+                        font-family: $ff;
+                        padding-top:Rm(10);
+                    }
+                    p {
+                        line-height: Rm(50);
+                        font-size:Rm(22);
+                        color:$c6;
+                        font-family: $ff;
+                    }
+                    h6 {
+                        line-height: Rm(60);
+                        font-size:Rm(24);
+                        color:$c6;
+                        font-family: $ff;
+                        span {
+                            margin-right:Rm(20);
+                        }
+                    }
+                    i {
+                        position: absolute;
+                        width:Rm(60);
+                        height:Rm(60);
+                        background: #eee;
+                        right:Rm(45);
+                        top:Rm(55);
+                        border-radius: 50%;
+                    }
+                }
+                .doit {
+                    height:Rm(60);
+                    background: #eee;
+                    border-radius: 0 0 Rm(6) Rm(6);
+                    a {
+                        float:left;
+                        text-align: center;
+                        line-height: Rm(60);
+                        height:Rm(60);
+                        color:$c3;
+                        border-right:1px solid #fff;
+                        box-sizing: border-box;
+                        &:last-child{
+                            border:none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.recharge {
+    h4 {
+        background: rgb(255, 250, 235);
+        color:$c3;
+        line-height: Rm(40);
+        padding:Rm(10) Rm(15);
+        font-size:Rm(24);
+    }
+    .select-coins {
+        margin:Rm(15) Rm(20);
+        border-bottom: 1px solid $color;
+        span {
+            float:left;
+            height:Rm(60);
+            width:20%;
+            font-size:Rm(24);
+            line-height: Rm(60);
+            font-family: $ff;
+        }
+        .more-select {
+            display: block;
+            height:Rm(60);
+            margin-left:20%;
+            font-size:Rm(24);
+            line-height: Rm(60);
+            overflow: hidden;
+            color:$c3;
+            font-family: Arial;
+            i {
+                float:right;
+                width:Rm(60);
+                height:Rm(60);
+                text-align: center;
+                background:url(./i/more.png) no-repeat center center;
+                background-size:Rm(30) Rm(30);
+            }
+        }
+    }
+    .recharge-address {
+        margin:Rm(35) Rm(20);
+        .rcode {
+            width:Rm(180);
+            height:Rm(180);
+            background: #ccc;
+            margin:Rm(20) auto 0;
+        }
+        p {
+            font-family: Arial;
+            text-align: center;
+            line-height: Rm(40);
+            padding:Rm(20) Rm(35);
+            font-size:Rm(24);
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+        h6 {
+            line-height: Rm(40);
+            padding:Rm(20) Rm(35);
+            font-size:Rm(24);
+            display: none;
+        }
+        input {
+            width:Rm(220);
+            height:Rm(60);
+            text-align: center;
+            line-height: Rm(60);
+            color:#fff;
+            background: #1d5fff;
+            display: block;
+            margin:0 auto;
+            border-radius: Rm(6);
+            border:none;
+        }
+    }
+}

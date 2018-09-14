@@ -1,0 +1,10 @@
+{
+  "presets": [
+      "react-app",
+      "react-native-stage-0/decorator-support"
+  ],
+  "plugins":[
+      "transform-runtime",
+      {}
+    ]
+}

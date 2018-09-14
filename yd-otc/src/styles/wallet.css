@@ -1,0 +1,207 @@
+.wallet-info .wallet-all {
+  margin: Rm(15) Rm(20) 0;
+  background: #eee;
+  height: Rm(180);
+  border-radius: Rm(10);
+  position: relative; }
+  .wallet-info .wallet-all h3 {
+    font-weight: normal;
+    text-align: center;
+    line-height: Rm(26);
+    padding-top: Rm(30);
+    font-family: "Microsoft yahei"; }
+  .wallet-info .wallet-all h4 {
+    font-weight: normal;
+    text-align: center;
+    line-height: Rm(20);
+    padding-top: Rm(30);
+    font-family: "Microsoft yahei"; }
+  .wallet-info .wallet-all h5 {
+    font-weight: normal;
+    text-align: center;
+    line-height: Rm(20);
+    padding-top: Rm(30);
+    font-family: "Microsoft yahei"; }
+  .wallet-info .wallet-all a {
+    position: absolute;
+    right: Rm(20);
+    top: Rm(10);
+    z-index: 10;
+    width: Rm(40);
+    height: Rm(40);
+    background: url(./i/hide.png) no-repeat center center;
+    background-size: Rm(40) Rm(40); }
+  .wallet-info .wallet-all .show {
+    background: url(./i/show.png) no-repeat center center;
+    background-size: Rm(40) Rm(40); }
+
+.wallet-info .wallet-nav {
+  height: Rm(120); }
+  .wallet-info .wallet-nav a {
+    float: left;
+    text-align: center;
+    color: #7f90b8;
+    font-family: "Microsoft yahei";
+    font-size: Rm(26);
+    padding-top: Rm(20);
+    height: Rm(100);
+    line-height: Rm(60); }
+    .wallet-info .wallet-nav a i {
+      display: block;
+      width: Rm(40);
+      height: Rm(40);
+      margin: 0 auto;
+      background: #eee;
+      border-radius: 50%; }
+
+.wallet-info .wallet-line {
+  height: Rm(10);
+  background: #e5e5e5; }
+
+.wallet-info .wallet-search {
+  margin: Rm(15) Rm(20) 0; }
+  .wallet-info .wallet-search .search {
+    float: left;
+    width: 40%;
+    height: Rm(50); }
+    .wallet-info .wallet-search .search input {
+      display: block;
+      height: Rm(30);
+      padding: Rm(6) Rm(15);
+      border: none;
+      border-radius: Rm(6);
+      background: none; }
+  .wallet-info .wallet-search .hidemin {
+    float: right;
+    width: 60%;
+    height: Rm(50); }
+    .wallet-info .wallet-search .hidemin label {
+      float: right;
+      height: Rm(50);
+      line-height: Rm(50);
+      font-size: Rm(26);
+      color: #7f90b8; }
+    .wallet-info .wallet-search .hidemin input {
+      float: right;
+      width: Rm(25);
+      height: Rm(25);
+      margin: Rm(13) Rm(15) 0 0; }
+
+.wallet-info .wallet-zc-lst {
+  margin: Rm(15) Rm(20) 0; }
+  .wallet-info .wallet-zc-lst ul li {
+    height: Rm(240);
+    border: 1px solid #eee;
+    border-radius: Rm(6);
+    overflow: hidden;
+    margin-top: Rm(15); }
+    .wallet-info .wallet-zc-lst ul li .showinfo {
+      height: Rm(180);
+      padding: 0 Rm(15);
+      position: relative; }
+      .wallet-info .wallet-zc-lst ul li .showinfo h3 {
+        line-height: Rm(60);
+        font-size: Rm(24);
+        color: #666;
+        font-family: "Microsoft yahei";
+        padding-top: Rm(10); }
+      .wallet-info .wallet-zc-lst ul li .showinfo p {
+        line-height: Rm(50);
+        font-size: Rm(22);
+        color: #666;
+        font-family: "Microsoft yahei"; }
+      .wallet-info .wallet-zc-lst ul li .showinfo h6 {
+        line-height: Rm(60);
+        font-size: Rm(24);
+        color: #666;
+        font-family: "Microsoft yahei"; }
+        .wallet-info .wallet-zc-lst ul li .showinfo h6 span {
+          margin-right: Rm(20); }
+      .wallet-info .wallet-zc-lst ul li .showinfo i {
+        position: absolute;
+        width: Rm(60);
+        height: Rm(60);
+        background: #eee;
+        right: Rm(45);
+        top: Rm(55);
+        border-radius: 50%; }
+    .wallet-info .wallet-zc-lst ul li .doit {
+      height: Rm(60);
+      background: #eee;
+      border-radius: 0 0 Rm(6) Rm(6); }
+      .wallet-info .wallet-zc-lst ul li .doit a {
+        float: left;
+        text-align: center;
+        line-height: Rm(60);
+        height: Rm(60);
+        color: #333;
+        border-right: 1px solid #fff;
+        box-sizing: border-box; }
+        .wallet-info .wallet-zc-lst ul li .doit a:last-child {
+          border: none; }
+
+.recharge h4 {
+  background: #fffaeb;
+  color: #333;
+  line-height: Rm(40);
+  padding: Rm(10) Rm(15);
+  font-size: Rm(24); }
+
+.recharge .select-coins {
+  margin: Rm(15) Rm(20);
+  border-bottom: 1px solid #7f90b8; }
+  .recharge .select-coins span {
+    float: left;
+    height: Rm(60);
+    width: 20%;
+    font-size: Rm(24);
+    line-height: Rm(60);
+    font-family: "Microsoft yahei"; }
+  .recharge .select-coins .more-select {
+    display: block;
+    height: Rm(60);
+    margin-left: 20%;
+    font-size: Rm(24);
+    line-height: Rm(60);
+    overflow: hidden;
+    color: #333;
+    font-family: Arial; }
+    .recharge .select-coins .more-select i {
+      float: right;
+      width: Rm(60);
+      height: Rm(60);
+      text-align: center;
+      background: url(./i/more.png) no-repeat center center;
+      background-size: Rm(30) Rm(30); }
+
+.recharge .recharge-address {
+  margin: Rm(35) Rm(20); }
+  .recharge .recharge-address .rcode {
+    width: Rm(180);
+    height: Rm(180);
+    background: #ccc;
+    margin: Rm(20) auto 0; }
+  .recharge .recharge-address p {
+    font-family: Arial;
+    text-align: center;
+    line-height: Rm(40);
+    padding: Rm(20) Rm(35);
+    font-size: Rm(24);
+    word-wrap: break-word;
+    word-break: break-all; }
+  .recharge .recharge-address h6 {
+    line-height: Rm(40);
+    padding: Rm(20) Rm(35);
+    font-size: Rm(24);
+    display: none; }
+  .recharge .recharge-address input {
+    width: Rm(220);
+    height: Rm(60);
+    text-align: center;
+    line-height: Rm(60);
+    color: #fff;
+    background: #1d5fff;
+    display: block;
+    margin: 0 auto;
+    border-radius: Rm(6);
+    border: none; }

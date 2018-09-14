@@ -1,0 +1,76 @@
+.user-nav .list {
+  height: Rm(90); }
+  .user-nav .list a {
+    color: #7f90b8;
+    float: left;
+    text-align: center;
+    line-height: Rm(90);
+    border-bottom: Rm(1) solid #7f90b8;
+    font-family: "Microsoft yahei"; }
+  .user-nav .list .active {
+    color: #1d5fff;
+    border-bottom: Rm(1) solid #1d5fff; }
+
+.user-con {
+  padding: Rm(15) Rm(30); }
+  .user-con .h3 {
+    height: Rm(70);
+    line-height: Rm(70);
+    border-bottom: Rm(1) solid #eee;
+    font-size: Rm(26);
+    color: #7f90b8;
+    font-family: "Microsoft yahei"; }
+  .user-con .info-ul {
+    padding: Rm(15) 0 Rm(50); }
+    .user-con .info-ul li {
+      height: Rm(70);
+      padding-top: Rm(20); }
+      .user-con .info-ul li .label {
+        float: left;
+        width: 30%;
+        height: Rm(70);
+        line-height: Rm(70);
+        font-size: Rm(26);
+        color: #7f90b8;
+        font-family: "Microsoft yahei"; }
+      .user-con .info-ul li .label-ctrl {
+        margin-left: 30%; }
+        .user-con .info-ul li .label-ctrl p {
+          height: Rm(70);
+          line-height: Rm(70);
+          font-size: Rm(26);
+          color: #7f90b8;
+          font-family: "Microsoft yahei"; }
+          .user-con .info-ul li .label-ctrl p a {
+            margin-left: Rm(40);
+            color: #1d5fff;
+            font-family: "Microsoft yahei"; }
+        .user-con .info-ul li .label-ctrl select {
+          border: 1px solid #7f90b8;
+          height: Rm(50);
+          margin-top: Rm(10);
+          box-sizing: border-box;
+          background: none;
+          outline: none;
+          padding: 0 Rm(30); }
+        .user-con .info-ul li .label-ctrl .card {
+          border: 1px solid #ced4da;
+          height: Rm(70);
+          margin-top: Rm(10);
+          border-radius: Rm(6);
+          box-sizing: border-box;
+          padding: 0 Rm(15);
+          width: 100%; }
+  .user-con .info-ol li {
+    height: Rm(70);
+    padding-top: Rm(10); }
+    .user-con .info-ol li span {
+      float: left;
+      width: 27%;
+      height: Rm(70);
+      line-height: Rm(70);
+      font-size: Rm(26);
+      color: #7f90b8;
+      font-family: "Microsoft yahei"; }
+    .user-con .info-ol li span:first-child {
+      width: 46%; }

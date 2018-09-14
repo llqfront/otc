@@ -1,0 +1,25 @@
+@charset "UTF-8";
+$ff:"Microsoft yahei";
+$color:#7f90b8;
+$c3:#333;
+$c6:#666;
+.home {
+    .banner {
+        height:Rm(330);
+        .swiper-container {
+            height:Rm(330);
+            .swiper-slide {
+                height:Rm(330);
+                background: #f60;
+                a {
+                    display: block;
+                    height:Rm(330);
+                }
+                img {
+                    display: block;
+                    height:Rm(330);
+                }
+            }
+        }
+    }
+}

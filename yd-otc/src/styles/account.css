@@ -1,0 +1,247 @@
+@charset "UTF-8";
+.account {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: #1c71ff; }
+  .account h3 {
+    padding-top: Rm(20);
+    height: Rm(60);
+    overflow: hidden; }
+    .account h3 .close {
+      float: left;
+      width: Rm(30);
+      height: Rm(30);
+      margin: Rm(15) 0 0 Rm(30);
+      background: url(./i/close.png) no-repeat 0 0;
+      background-size: Rm(30) Rm(30); }
+    .account h3 .link {
+      float: right;
+      height: Rm(60);
+      line-height: Rm(60);
+      margin: 0 Rm(30) 0;
+      color: #fff;
+      font-family: "Microsoft yahei"; }
+  .account h4 {
+    padding: Rm(60) 0 0 Rm(60);
+    line-height: Rm(60);
+    font-size: Rm(32);
+    font-family: "Microsoft yahei";
+    color: #fff;
+    font-weight: normal; }
+  .account h5 {
+    padding: 0 0 0 Rm(60);
+    line-height: Rm(60);
+    font-size: Rm(26);
+    font-family: "Microsoft yahei";
+    color: #d4d4d2;
+    font-weight: normal; }
+  .account .account-from {
+    padding: Rm(60) Rm(60) 0; }
+    .account .account-from li {
+      overflow: hidden;
+      padding-top: Rm(30);
+      border-bottom: 1px solid #ccc;
+      height: Rm(70);
+      position: relative;
+      /**
+             placeholder color更改
+            */ }
+      .account .account-from li label {
+        float: left;
+        width: 23%;
+        color: #fff;
+        line-height: Rm(70);
+        height: Rm(70);
+        box-sizing: border-box;
+        padding-left: Rm(15);
+        position: relative; }
+        .account .account-from li label:before {
+          position: absolute;
+          right: 0;
+          top: 0;
+          display: block;
+          content: "";
+          width: Rm(30);
+          height: Rm(70);
+          background: url(./i/down.png) no-repeat center center;
+          background-size: Rm(20) Rm(20); }
+      .account .account-from li .label-ctrl {
+        margin-left: 23%; }
+        .account .account-from li .label-ctrl input {
+          background: none;
+          border: none;
+          height: Rm(70);
+          line-height: Rm(70);
+          width: 100%;
+          box-sizing: border-box;
+          padding: 0 0 0 Rm(10);
+          color: #fff;
+          font-size: Rm(26);
+          font-family: "Microsoft yahei"; }
+      .account .account-from li .inp {
+        background: none;
+        border: none;
+        height: Rm(70);
+        line-height: Rm(70);
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 0 0 Rm(10);
+        color: #fff;
+        font-size: Rm(26);
+        font-family: "Microsoft yahei"; }
+      .account .account-from li input::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: #fff; }
+      .account .account-from li input:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #fff; }
+      .account .account-from li input::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #fff; }
+      .account .account-from li input:-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: #fff; }
+      .account .account-from li span {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: Rm(70);
+        line-height: Rm(70);
+        color: #fff;
+        font-family: "Microsoft yahei"; }
+      .account .account-from li span.def {
+        color: #d4d4d2; }
+      .account .account-from li i {
+        position: absolute;
+        right: Rm(20);
+        top: Rm(50);
+        z-index: 10;
+        width: Rm(40);
+        height: Rm(40);
+        background: url(./i/hide.png) no-repeat center center;
+        background-size: Rm(40) Rm(40); }
+      .account .account-from li .show {
+        background: url(./i/show.png) no-repeat center center;
+        background-size: Rm(40) Rm(40); }
+      .account .account-from li .btn {
+        display: block;
+        height: Rm(70);
+        line-height: Rm(70);
+        color: #3168ef;
+        background: #e5e5e5;
+        width: 100%;
+        text-align: center;
+        border: none;
+        border-radius: Rm(35);
+        font-size: Rm(26);
+        font-family: "Microsoft yahei"; }
+    .account .account-from .sp {
+      border: none;
+      margin-top: Rm(40); }
+    .account .account-from .other {
+      border: none;
+      height: Rm(80);
+      padding: Rm(30) Rm(15) 0; }
+      .account .account-from .other .xieyi {
+        float: left;
+        line-height: RM(24);
+        color: #d4d4d2;
+        font-size: Rm(18); }
+        .account .account-from .other .xieyi em {
+          font-style: normal;
+          display: block;
+          color: #fff;
+          font-size: Rm(18); }
+      .account .account-from .other .r2 {
+        float: right;
+        height: Rm(60);
+        line-height: Rm(60);
+        color: #fff; }
+      .account .account-from .other .r1 {
+        float: left;
+        height: Rm(60);
+        line-height: Rm(60);
+        color: #fff; }
+
+.forgot-password {
+  padding: Rm(15) 0; }
+  .forgot-password .progress {
+    background: #e6e6e6;
+    height: Rm(180);
+    overflow: hidden; }
+    .forgot-password .progress p {
+      float: left;
+      width: 35%; }
+    .forgot-password .progress span {
+      padding-top: Rm(40);
+      width: Rm(150);
+      text-align: center;
+      line-height: Rm(80); }
+      .forgot-password .progress span i {
+        display: block;
+        width: Rm(50);
+        margin: 0 auto;
+        height: Rm(50);
+        background: red; }
+    .forgot-password .progress .spn1 {
+      float: right; }
+    .forgot-password .progress em {
+      float: left;
+      width: 30%;
+      height: Rm(90);
+      border-bottom: 1px dashed #666; }
+    .forgot-password .progress .spn2 {
+      float: left; }
+  .forgot-password ul li {
+    border-bottom: 1px solid #eee;
+    height: Rm(70);
+    overflow: hidden; }
+    .forgot-password ul li label {
+      float: left;
+      padding-left: Rm(30);
+      box-sizing: border-box;
+      height: Rm(70);
+      line-height: Rm(70);
+      width: 20%; }
+    .forgot-password ul li .label-ctrl {
+      margin-left: 20%; }
+      .forgot-password ul li .label-ctrl input {
+        width: 100%;
+        padding: Rm(10) Rm(15);
+        box-sizing: border-box;
+        height: Rm(70);
+        font-size: Rm(26);
+        color: #333;
+        font-family: "Microsoft yahei";
+        background: none;
+        border: none; }
+      .forgot-password ul li .label-ctrl input::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: #333; }
+      .forgot-password ul li .label-ctrl input:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #333; }
+      .forgot-password ul li .label-ctrl input::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #333; }
+      .forgot-password ul li .label-ctrl input:-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: #333; }
+  .forgot-password ul li:last-child {
+    border: none;
+    margin: Rm(15) Rm(30); }
+    .forgot-password ul li:last-child input {
+      background: #e5e5e5;
+      color: #fff;
+      border: none;
+      border-radius: Rm(6);
+      display: block;
+      width: 100%;
+      height: Rm(70);
+      font-family: "Microsoft yahei";
+      font-size: Rm(26);
+      cursor: pointer; }

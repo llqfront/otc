@@ -1,0 +1,380 @@
+@charset "UTF-8";
+.currency-bar {
+  height: Rm(70);
+  padding: 0 Rm(30); }
+  .currency-bar h3 {
+    float: left;
+    height: Rm(70); }
+    .currency-bar h3 span {
+      float: left;
+      height: Rm(70);
+      line-height: Rm(70);
+      font-size: Rm(30);
+      font-family: Arial;
+      margin-right: Rm(30); }
+    .currency-bar h3 i {
+      float: left;
+      width: Rm(30);
+      height: Rm(30);
+      margin-top: Rm(20);
+      background: url(./i/down2.png) no-repeat 0 0;
+      background-size: Rm(25) Rm(25); }
+  .currency-bar p {
+    float: right;
+    height: Rm(70); }
+    .currency-bar p em {
+      float: right;
+      height: Rm(70);
+      line-height: Rm(70);
+      font-size: Rm(18);
+      font-style: normal;
+      font-family: Arial;
+      color: #d81e06; }
+      .currency-bar p em i {
+        float: right;
+        width: Rm(20);
+        height: Rm(70);
+        background: url(./i/downs.png) no-repeat center Rm(23);
+        background-size: Rm(20) Rm(20); }
+    .currency-bar p .normal {
+      color: #333; }
+      .currency-bar p .normal i {
+        display: none; }
+    .currency-bar p .green {
+      color: #1afa29; }
+      .currency-bar p .green i {
+        background: url(./i/ups.png) no-repeat center Rm(23);
+        background-size: Rm(20) Rm(20); }
+    .currency-bar p span {
+      float: right;
+      height: Rm(70);
+      line-height: Rm(70);
+      margin-right: Rm(30);
+      color: #d81e06;
+      font-family: Arial; }
+
+.trade-line {
+  height: Rm(10);
+  background: #f7f6f6; }
+
+.trade .trade-filter {
+  height: Rm(70);
+  border-bottom: Rm(1) solid #7f90b8; }
+  .trade .trade-filter h6 {
+    float: left;
+    width: 33.3%;
+    height: Rm(70);
+    text-align: center;
+    line-height: Rm(70);
+    vertical-align: middle;
+    font-size: Rm(24);
+    font-family: "Microsoft yahei";
+    color: #666; }
+    .trade .trade-filter h6 input {
+      display: inline-block;
+      width: Rm(25);
+      height: Rm(25);
+      vertical-align: middle;
+      margin: Rm(-3) Rm(10) 0 0; }
+    .trade .trade-filter h6 i {
+      display: inline-block;
+      vertical-align: middle;
+      width: Rm(20);
+      height: Rm(20);
+      background: url(./i/down2.png) no-repeat center center;
+      background-size: Rm(20) Rm(20);
+      margin: Rm(-3) 0 0 Rm(10); }
+
+.trade-list ul li {
+  height: Rm(150);
+  border-bottom: Rm(7) solid #f7f6f6;
+  position: relative; }
+  .trade-list ul li a {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10; }
+  .trade-list ul li .hd {
+    height: Rm(70);
+    padding-right: Rm(25); }
+    .trade-list ul li .hd span {
+      float: right;
+      font-style: normal;
+      background: #16c121;
+      width: Rm(100);
+      line-height: Rm(40);
+      text-align: center;
+      border-radius: Rm(10);
+      text-align: center;
+      color: #fff;
+      font-size: Rm(24);
+      margin-top: Rm(25);
+      font-family: "Microsoft yahei"; }
+    .trade-list ul li .hd p {
+      float: left;
+      margin: Rm(15) 0 0 0;
+      height: Rm(54);
+      font-family: "Microsoft yahei"; }
+      .trade-list ul li .hd p:before {
+        float: left;
+        content: "";
+        display: block;
+        width: Rm(8);
+        height: Rm(40);
+        background: #16c121;
+        margin-top: Rm(7); }
+      .trade-list ul li .hd p em {
+        float: left;
+        width: Rm(25);
+        height: Rm(25);
+        background: url(./i/photo.png) no-repeat 0 0;
+        background-size: Rm(25) Rm(25);
+        margin: Rm(13) 0 0 Rm(15); }
+      .trade-list ul li .hd p var {
+        float: left;
+        height: Rm(40);
+        line-height: Rm(42);
+        font-size: Rm(24);
+        font-style: normal;
+        margin: Rm(7) 0 0 Rm(15);
+        color: #bfbfbf;
+        overflow: hidden; }
+      .trade-list ul li .hd p i {
+        float: left;
+        width: Rm(25);
+        height: Rm(25);
+        background: url(./i/hg.png) no-repeat 0 0;
+        background-size: Rm(25) Rm(25);
+        margin: Rm(14) 0 0 Rm(15); }
+      .trade-list ul li .hd p b {
+        font-weight: normal;
+        border: Rm(1) solid #16c121;
+        height: Rm(30);
+        line-height: Rm(32);
+        overflow: hidden;
+        padding: 0 Rm(10);
+        color: #16c121;
+        float: left;
+        font-size: Rm(22);
+        margin: Rm(13) 0 0 Rm(20);
+        border-radius: Rm(5); }
+  .trade-list ul li .hds {
+    height: Rm(70);
+    padding-right: Rm(25); }
+    .trade-list ul li .hds span {
+      float: right;
+      font-style: normal;
+      text-align: center;
+      color: #f60;
+      font-size: Rm(22);
+      font-family: "Microsoft yahei";
+      height: Rm(40);
+      line-height: Rm(40);
+      margin: Rm(23) Rm(10) 0 0; }
+    .trade-list ul li .hds p {
+      float: left;
+      margin: Rm(15) 0 0 0;
+      height: Rm(54);
+      font-family: "Microsoft yahei"; }
+      .trade-list ul li .hds p:before {
+        float: left;
+        content: "买";
+        display: block;
+        width: Rm(40);
+        height: Rm(36);
+        line-height: Rm(36);
+        background: #16c121;
+        margin-top: Rm(7);
+        font-size: Rm(22);
+        color: #fff;
+        text-align: center;
+        border-radius: 0 Rm(5) Rm(5) 0; }
+      .trade-list ul li .hds p em {
+        float: left;
+        height: Rm(40);
+        line-height: Rm(42);
+        margin: Rm(7) 0 0 Rm(15);
+        font-style: normal; }
+      .trade-list ul li .hds p var {
+        float: left;
+        height: Rm(40);
+        line-height: Rm(40);
+        font-size: Rm(24);
+        font-style: normal;
+        margin: Rm(7) 0 0 Rm(15);
+        color: #bfbfbf;
+        overflow: hidden; }
+  .trade-list ul li .bd {
+    padding-top: Rm(10);
+    font-family: "Microsoft yahei"; }
+    .trade-list ul li .bd p {
+      float: left;
+      width: 33.3%;
+      box-sizing: border-box;
+      padding-left: Rm(20);
+      height: Rm(48);
+      font-size: Rm(22);
+      font-family: "Microsoft yahei";
+      color: #bfbfbf;
+      position: relative; }
+      .trade-list ul li .bd p:before {
+        content: "";
+        position: absolute;
+        width: Rm(2);
+        height: Rm(45);
+        background: #ccc;
+        left: 0;
+        top: Rm(3); }
+      .trade-list ul li .bd p span {
+        display: block;
+        line-height: Rm(24);
+        color: #666; }
+      .trade-list ul li .bd p var {
+        font-style: normal;
+        display: block;
+        line-height: Rm(24);
+        font-size: Rm(18);
+        padding-left: Rm(1); }
+    .trade-list ul li .bd p:first-child:before {
+      display: none; }
+  .trade-list ul li.cur .hd span, .trade-list ul li.sell .hd span {
+    background: #d81e06; }
+  .trade-list ul li.cur .hd p:before, .trade-list ul li.sell .hd p:before {
+    background: #d81e06; }
+  .trade-list ul li.cur .hds p:before, .trade-list ul li.sell .hds p:before {
+    background: #d81e06; }
+
+.doit .doit-info dl dt {
+  height: Rm(90);
+  padding-right: Rm(25);
+  border-bottom: Rm(1) solid #ccc; }
+  .doit .doit-info dl dt span {
+    float: right;
+    height: Rm(90); }
+    .doit .doit-info dl dt span i {
+      width: Rm(40);
+      height: Rm(40);
+      float: right;
+      margin: Rm(25) Rm(5) 0 0; }
+    .doit .doit-info dl dt span .wx {
+      background: url(./i/wxpay.png) no-repeat center center;
+      background-size: Rm(27) Rm(27); }
+    .doit .doit-info dl dt span .alipay {
+      background: url(./i/alipay.png) no-repeat center center;
+      background-size: Rm(27) Rm(27); }
+    .doit .doit-info dl dt span .yh {
+      background: url(./i/yhk.png) no-repeat center center;
+      background-size: Rm(40) Rm(40);
+      margin: Rm(26.5) Rm(9) 0 0; }
+  .doit .doit-info dl dt p {
+    float: left;
+    margin: Rm(15) 0 0 0;
+    height: Rm(54);
+    font-family: "Microsoft yahei"; }
+    .doit .doit-info dl dt p:before {
+      float: left;
+      content: "";
+      display: block;
+      width: Rm(8);
+      height: Rm(40);
+      background: #16c121;
+      margin-top: Rm(7); }
+    .doit .doit-info dl dt p em {
+      float: left;
+      width: Rm(25);
+      height: Rm(25);
+      background: url(./i/photo.png) no-repeat 0 0;
+      background-size: Rm(25) Rm(25);
+      margin: Rm(13) 0 0 Rm(15); }
+    .doit .doit-info dl dt p var {
+      float: left;
+      height: Rm(40);
+      line-height: Rm(42);
+      font-size: Rm(24);
+      font-style: normal;
+      margin: Rm(7) 0 0 Rm(15);
+      color: #bfbfbf;
+      overflow: hidden; }
+    .doit .doit-info dl dt p i {
+      float: left;
+      width: Rm(25);
+      height: Rm(25);
+      background: url(./i/hg.png) no-repeat 0 0;
+      background-size: Rm(25) Rm(25);
+      margin: Rm(15) 0 0 Rm(15); }
+    .doit .doit-info dl dt p b {
+      font-weight: normal;
+      height: Rm(40);
+      line-height: Rm(40);
+      overflow: hidden;
+      color: #bfbfbf;
+      float: left;
+      font-size: Rm(22);
+      margin: Rm(7) 0 0 Rm(15); }
+
+.doit .doit-info dl dd {
+  height: Rm(90);
+  border-bottom: Rm(1) solid #ccc;
+  padding: 0 Rm(25); }
+  .doit .doit-info dl dd label, .doit .doit-info dl dd span {
+    float: left;
+    height: Rm(90);
+    width: Rm(150);
+    line-height: Rm(90);
+    font-family: "Microsoft yahei";
+    font-size: Rm(24);
+    color: #666; }
+  .doit .doit-info dl dd span {
+    float: right;
+    text-align: right; }
+  .doit .doit-info dl dd .num {
+    margin: 0 Rm(150); }
+    .doit .doit-info dl dd .num p {
+      height: Rm(90);
+      width: Rm(150);
+      line-height: Rm(90);
+      font-family: "Microsoft yahei";
+      font-size: Rm(26);
+      color: #666; }
+    .doit .doit-info dl dd .num input {
+      height: Rm(90);
+      width: Rm(150);
+      line-height: Rm(90);
+      font-family: "Microsoft yahei";
+      font-size: Rm(26);
+      color: #666;
+      width: 100%;
+      border: none;
+      background: none;
+      box-sizing: border-box; }
+
+.doit .doit-info .subFrom {
+  padding: Rm(30); }
+  .doit .doit-info .subFrom input {
+    height: Rm(70);
+    line-height: Rm(70);
+    text-align: center;
+    font-size: Rm(26);
+    color: #fff;
+    background: #3168ef;
+    display: block;
+    width: 100%;
+    border: none;
+    font-family: "Microsoft yahei";
+    border-radius: Rm(35);
+    cursor: pointer; }
+
+.createList {
+  display: block;
+  position: fixed;
+  right: Rm(30);
+  bottom: Rm(150);
+  width: Rm(70);
+  height: Rm(70);
+  border-radius: 50%;
+  z-index: 1000;
+  background: url(./i/add.png) no-repeat center center;
+  background-size: Rm(70) Rm(70); }

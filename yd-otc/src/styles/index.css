@@ -1,0 +1,1345 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  font-family: "Microsoft yahei"; }
+
+body, textarea, input, select, option {
+  color: #333;
+  font-family: "Hiragino Sans GB", "Microsoft Yahei", tahoma, arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent; }
+
+body, h1, h2, h3, h4, h5, h6, blockquote, ol, ul, dl, dd, p, textarea, input, select, option, form {
+  margin: 0;
+  padding: 0; }
+
+ol, ul, textarea, input, option, th, td {
+  padding: 0; }
+
+.page {
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%; }
+
+a, select, input, textarea {
+  outline: none; }
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  display: block; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ul, ol {
+  list-style-type: none; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+.clearfix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden; }
+
+/* ios默认文本框阴影 */
+input[type=text], textarea {
+  -webkit-appearance: none; }
+
+/* 低版本安卓文本框层级问题 */
+input:focus {
+  -webkit-user-modify: read-write-plaintext-only; }
+
+fieldset, img {
+  border: 0; }
+
+a {
+  text-decoration: none; }
+
+a, textarea, input {
+  outline: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+textarea {
+  overflow: auto;
+  resize: none; }
+
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 75% !important;
+    /* 12÷16=75% */ } }
+
+/**
+    62.5%   10px;
+    640 150%    24px;
+    320除以标准比例 640  再乘以 640的基数24  再除以  HTML 根据基数16
+    320/640  * 24 / 16 = 75%;
+    375/640  * 24 / 16 = 87.89%;
+    414/640  * 24 / 16 = 97.03%
+*/
+@media only screen and (min-width: 360px) {
+  html {
+    font-size: 84.3% !important;
+    /* 13.5÷16=84.3% */ } }
+
+@media only screen and (min-width: 375px) {
+  html {
+    font-size: 87.89062% !important;
+    /* 14.0625÷16=87.890625% */ } }
+
+@media only screen and (min-width: 384px) {
+  html {
+    font-size: 90% !important;
+    /* 14.4÷16=90% */ } }
+
+@media only screen and (min-width: 390px) {
+  html {
+    font-size: 91.4% !important;
+    /* 14.625÷16=91.4% */ } }
+
+@media only screen and (min-width: 412px) {
+  html {
+    font-size: 96.56% !important;
+    /* 15.45÷16=96.56% */ } }
+
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 97.03% !important;
+    /* 15.525÷16=97.03% */ } }
+
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 112.5% !important;
+    /* 18÷16=112.5% */ } }
+
+@media only screen and (min-width: 560px) {
+  html {
+    font-size: 131.25% !important;
+    /* 21÷16=131.25% */ } }
+
+@media only screen and (min-width: 640px) {
+  html {
+    font-size: 150% !important;
+    /* 24÷16=150% */ } }
+
+@media only screen and (min-width: 720px) {
+  html {
+    font-size: 168.75% !important;
+    /* 27÷16=168.75% */ } }
+
+@media only screen and (min-width: 750px) {
+  html {
+    font-size: 175.78125% !important;
+    /* 28.125÷16=175.78125% */ } }
+
+.main {
+  min-width: 320px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: 4.62222rem; }
+
+body {
+  background: #fff; }
+
+.header {
+  height: 2.84444rem;
+  padding: 0.35556rem 0 0 0.71111rem; }
+  .header img {
+    display: block;
+    height: 2.13333rem; }
+
+.nav {
+  height: 60px;
+  background: #1c71ff; }
+
+.nav-bar {
+  height: 2.84444rem; }
+  .nav-bar h3 {
+    font-weight: normal;
+    text-align: center;
+    line-height: 2.84444rem;
+    font-size: 1.06667rem;
+    font-family: "Microsoft yahei";
+    overflow: hidden; }
+    .nav-bar h3 .return {
+      float: left;
+      width: 2.84444rem;
+      height: 2.84444rem;
+      background: url(./i/return.png) no-repeat center center;
+      background-size: 1.06667rem 1.06667rem; }
+    .nav-bar h3 .more {
+      float: right;
+      width: 2.84444rem;
+      height: 2.84444rem;
+      background: url(./i/mores.png) no-repeat center center;
+      background-size: 1.06667rem 1.06667rem; }
+    .nav-bar h3 .unit {
+      float: left;
+      width: 4.26667rem;
+      height: 2.84444rem;
+      line-height: 2.84444rem;
+      font-size: 0.85333rem;
+      font-family: "Microsoft yahei";
+      color: #666;
+      text-align: left;
+      padding-left: 1.06667rem; }
+    .nav-bar h3 .fr {
+      float: right; }
+    .nav-bar h3 .hide {
+      display: block;
+      visibility: hidden; }
+
+.nav-list {
+  height: 2.84444rem; }
+  .nav-list a {
+    color: #7f90b8;
+    float: left;
+    text-align: center;
+    line-height: 2.84444rem;
+    border-bottom: 0.03556rem solid #7f90b8;
+    font-family: "Microsoft yahei"; }
+  .nav-list .active {
+    color: #1d5fff;
+    border-bottom: 0.03556rem solid #1d5fff; }
+
+.tab-bar {
+  height: 4.26667rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #f5f5f5;
+  border-top: 0.03556rem solid #eee; }
+  .tab-bar a {
+    float: left;
+    text-align: center;
+    color: #7f90b8;
+    font-family: "Microsoft yahei";
+    font-size: 0.92444rem;
+    padding-top: 0.71111rem;
+    height: 3.55556rem;
+    line-height: 2.13333rem; }
+    .tab-bar a i {
+      display: block;
+      width: 1.42222rem;
+      height: 1.42222rem;
+      margin: 0 auto;
+      border-radius: 50%; }
+    .tab-bar a .home {
+      background: url(./i/home.png) no-repeat center center;
+      background-size: 1.42222rem 1.42222rem; }
+    .tab-bar a .market {
+      background: url(./i/market.png) no-repeat center center;
+      background-size: 1.77778rem 1.77778rem; }
+    .tab-bar a .trade {
+      background: url(./i/trade.png) no-repeat center center;
+      background-size: 1.42222rem 1.42222rem; }
+    .tab-bar a .wallet {
+      background: url(./i/wallet.png) no-repeat center center;
+      background-size: 1.42222rem 1.42222rem; }
+    .tab-bar a .user {
+      background: url(./i/user.png) no-repeat center center;
+      background-size: 1.42222rem 1.42222rem; }
+  .tab-bar .active {
+    color: #1d5fff; }
+    .tab-bar .active .home {
+      background: url(./i/homes.png) no-repeat center center;
+      background-size: 1.42222rem 1.42222rem; }
+    .tab-bar .active .market {
+      background: url(./i/markets.png) no-repeat center center;
+      background-size: 1.77778rem 1.77778rem; }
+    .tab-bar .active .trade {
+      background: url(./i/trades.png) no-repeat center center;
+      background-size: 1.42222rem 1.42222rem; }
+    .tab-bar .active .wallet {
+      background: url(./i/wallets.png) no-repeat center center;
+      background-size: 1.42222rem 1.42222rem; }
+    .tab-bar .active .user {
+      background: url(./i/users.png) no-repeat center center;
+      background-size: 1.42222rem 1.42222rem; }
+
+.one-list a {
+  width: 100%; }
+
+.two-list a {
+  width: 50%; }
+
+.three-list a {
+  width: 33.3%; }
+
+.four-list a {
+  width: 25%; }
+
+.five-list a {
+  width: 20%; }
+
+.user-nav .list {
+  height: 3.2rem; }
+  .user-nav .list a {
+    color: #7f90b8;
+    float: left;
+    text-align: center;
+    line-height: 3.2rem;
+    border-bottom: 0.03556rem solid #7f90b8;
+    font-family: "Microsoft yahei"; }
+  .user-nav .list .active {
+    color: #1d5fff;
+    border-bottom: 0.03556rem solid #1d5fff; }
+
+.user-con {
+  padding: 0.53333rem 1.06667rem; }
+  .user-con .h3 {
+    height: 2.48889rem;
+    line-height: 2.48889rem;
+    border-bottom: 0.03556rem solid #eee;
+    font-size: 0.92444rem;
+    color: #7f90b8;
+    font-family: "Microsoft yahei"; }
+  .user-con .info-ul {
+    padding: 0.53333rem 0 1.77778rem; }
+    .user-con .info-ul li {
+      height: 2.48889rem;
+      padding-top: 0.71111rem; }
+      .user-con .info-ul li .label {
+        float: left;
+        width: 30%;
+        height: 2.48889rem;
+        line-height: 2.48889rem;
+        font-size: 0.92444rem;
+        color: #7f90b8;
+        font-family: "Microsoft yahei"; }
+      .user-con .info-ul li .label-ctrl {
+        margin-left: 30%; }
+        .user-con .info-ul li .label-ctrl p {
+          height: 2.48889rem;
+          line-height: 2.48889rem;
+          font-size: 0.92444rem;
+          color: #7f90b8;
+          font-family: "Microsoft yahei"; }
+          .user-con .info-ul li .label-ctrl p a {
+            margin-left: 1.42222rem;
+            color: #1d5fff;
+            font-family: "Microsoft yahei"; }
+        .user-con .info-ul li .label-ctrl select {
+          border: 1px solid #7f90b8;
+          height: 1.77778rem;
+          margin-top: 0.35556rem;
+          box-sizing: border-box;
+          background: none;
+          outline: none;
+          padding: 0 1.06667rem; }
+        .user-con .info-ul li .label-ctrl .card {
+          border: 1px solid #ced4da;
+          height: 2.48889rem;
+          margin-top: 0.35556rem;
+          border-radius: 0.21333rem;
+          box-sizing: border-box;
+          padding: 0 0.53333rem;
+          width: 100%; }
+  .user-con .info-ol li {
+    height: 2.48889rem;
+    padding-top: 0.35556rem; }
+    .user-con .info-ol li span {
+      float: left;
+      width: 27%;
+      height: 2.48889rem;
+      line-height: 2.48889rem;
+      font-size: 0.92444rem;
+      color: #7f90b8;
+      font-family: "Microsoft yahei"; }
+    .user-con .info-ol li span:first-child {
+      width: 46%; }
+
+.wallet-info .wallet-all {
+  margin: 0.53333rem 0.71111rem 0;
+  background: #eee;
+  height: 6.4rem;
+  border-radius: 0.35556rem;
+  position: relative; }
+  .wallet-info .wallet-all h3 {
+    font-weight: normal;
+    text-align: center;
+    line-height: 0.92444rem;
+    padding-top: 1.06667rem;
+    font-family: "Microsoft yahei"; }
+  .wallet-info .wallet-all h4 {
+    font-weight: normal;
+    text-align: center;
+    line-height: 0.71111rem;
+    padding-top: 1.06667rem;
+    font-family: "Microsoft yahei"; }
+  .wallet-info .wallet-all h5 {
+    font-weight: normal;
+    text-align: center;
+    line-height: 0.71111rem;
+    padding-top: 1.06667rem;
+    font-family: "Microsoft yahei"; }
+  .wallet-info .wallet-all a {
+    position: absolute;
+    right: 0.71111rem;
+    top: 0.35556rem;
+    z-index: 10;
+    width: 1.42222rem;
+    height: 1.42222rem;
+    background: url(./i/hide.png) no-repeat center center;
+    background-size: 1.42222rem 1.42222rem; }
+  .wallet-info .wallet-all .show {
+    background: url(./i/show.png) no-repeat center center;
+    background-size: 1.42222rem 1.42222rem; }
+
+.wallet-info .wallet-nav {
+  height: 4.26667rem; }
+  .wallet-info .wallet-nav a {
+    float: left;
+    text-align: center;
+    color: #7f90b8;
+    font-family: "Microsoft yahei";
+    font-size: 0.92444rem;
+    padding-top: 0.71111rem;
+    height: 3.55556rem;
+    line-height: 2.13333rem; }
+    .wallet-info .wallet-nav a i {
+      display: block;
+      width: 1.42222rem;
+      height: 1.42222rem;
+      margin: 0 auto;
+      background: #eee;
+      border-radius: 50%; }
+
+.wallet-info .wallet-line {
+  height: 0.35556rem;
+  background: #e5e5e5; }
+
+.wallet-info .wallet-search {
+  margin: 0.53333rem 0.71111rem 0; }
+  .wallet-info .wallet-search .search {
+    float: left;
+    width: 40%;
+    height: 1.77778rem; }
+    .wallet-info .wallet-search .search input {
+      display: block;
+      height: 1.06667rem;
+      padding: 0.21333rem 0.53333rem;
+      border: none;
+      border-radius: 0.21333rem;
+      background: none; }
+  .wallet-info .wallet-search .hidemin {
+    float: right;
+    width: 60%;
+    height: 1.77778rem; }
+    .wallet-info .wallet-search .hidemin label {
+      float: right;
+      height: 1.77778rem;
+      line-height: 1.77778rem;
+      font-size: 0.92444rem;
+      color: #7f90b8; }
+    .wallet-info .wallet-search .hidemin input {
+      float: right;
+      width: 0.88889rem;
+      height: 0.88889rem;
+      margin: 0.46222rem 0.53333rem 0 0; }
+
+.wallet-info .wallet-zc-lst {
+  margin: 0.53333rem 0.71111rem 0; }
+  .wallet-info .wallet-zc-lst ul li {
+    height: 8.53333rem;
+    border: 1px solid #eee;
+    border-radius: 0.21333rem;
+    overflow: hidden;
+    margin-top: 0.53333rem; }
+    .wallet-info .wallet-zc-lst ul li .showinfo {
+      height: 6.4rem;
+      padding: 0 0.53333rem;
+      position: relative; }
+      .wallet-info .wallet-zc-lst ul li .showinfo h3 {
+        line-height: 2.13333rem;
+        font-size: 0.85333rem;
+        color: #666;
+        font-family: "Microsoft yahei";
+        padding-top: 0.35556rem; }
+      .wallet-info .wallet-zc-lst ul li .showinfo p {
+        line-height: 1.77778rem;
+        font-size: 0.78222rem;
+        color: #666;
+        font-family: "Microsoft yahei"; }
+      .wallet-info .wallet-zc-lst ul li .showinfo h6 {
+        line-height: 2.13333rem;
+        font-size: 0.85333rem;
+        color: #666;
+        font-family: "Microsoft yahei"; }
+        .wallet-info .wallet-zc-lst ul li .showinfo h6 span {
+          margin-right: 0.71111rem; }
+      .wallet-info .wallet-zc-lst ul li .showinfo i {
+        position: absolute;
+        width: 2.13333rem;
+        height: 2.13333rem;
+        background: #eee;
+        right: 1.6rem;
+        top: 1.95556rem;
+        border-radius: 50%; }
+    .wallet-info .wallet-zc-lst ul li .doit {
+      height: 2.13333rem;
+      background: #eee;
+      border-radius: 0 0 0.21333rem 0.21333rem; }
+      .wallet-info .wallet-zc-lst ul li .doit a {
+        float: left;
+        text-align: center;
+        line-height: 2.13333rem;
+        height: 2.13333rem;
+        color: #333;
+        border-right: 1px solid #fff;
+        box-sizing: border-box; }
+        .wallet-info .wallet-zc-lst ul li .doit a:last-child {
+          border: none; }
+
+.recharge h4 {
+  background: #fffaeb;
+  color: #333;
+  line-height: 1.42222rem;
+  padding: 0.35556rem 0.53333rem;
+  font-size: 0.85333rem; }
+
+.recharge .select-coins {
+  margin: 0.53333rem 0.71111rem;
+  border-bottom: 1px solid #7f90b8; }
+  .recharge .select-coins span {
+    float: left;
+    height: 2.13333rem;
+    width: 20%;
+    font-size: 0.85333rem;
+    line-height: 2.13333rem;
+    font-family: "Microsoft yahei"; }
+  .recharge .select-coins .more-select {
+    display: block;
+    height: 2.13333rem;
+    margin-left: 20%;
+    font-size: 0.85333rem;
+    line-height: 2.13333rem;
+    overflow: hidden;
+    color: #333;
+    font-family: Arial; }
+    .recharge .select-coins .more-select i {
+      float: right;
+      width: 2.13333rem;
+      height: 2.13333rem;
+      text-align: center;
+      background: url(./i/more.png) no-repeat center center;
+      background-size: 1.06667rem 1.06667rem; }
+
+.recharge .recharge-address {
+  margin: 1.24444rem 0.71111rem; }
+  .recharge .recharge-address .rcode {
+    width: 6.4rem;
+    height: 6.4rem;
+    background: #ccc;
+    margin: 0.71111rem auto 0; }
+  .recharge .recharge-address p {
+    font-family: Arial;
+    text-align: center;
+    line-height: 1.42222rem;
+    padding: 0.71111rem 1.24444rem;
+    font-size: 0.85333rem;
+    word-wrap: break-word;
+    word-break: break-all; }
+  .recharge .recharge-address h6 {
+    line-height: 1.42222rem;
+    padding: 0.71111rem 1.24444rem;
+    font-size: 0.85333rem;
+    display: none; }
+  .recharge .recharge-address input {
+    width: 7.82222rem;
+    height: 2.13333rem;
+    text-align: center;
+    line-height: 2.13333rem;
+    color: #fff;
+    background: #1d5fff;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.21333rem;
+    border: none; }
+
+.account {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: #1c71ff; }
+  .account h3 {
+    padding-top: 0.71111rem;
+    height: 2.13333rem;
+    overflow: hidden; }
+    .account h3 .close {
+      float: left;
+      width: 1.06667rem;
+      height: 1.06667rem;
+      margin: 0.53333rem 0 0 1.06667rem;
+      background: url(./i/close.png) no-repeat 0 0;
+      background-size: 1.06667rem 1.06667rem; }
+    .account h3 .link {
+      float: right;
+      height: 2.13333rem;
+      line-height: 2.13333rem;
+      margin: 0 1.06667rem 0;
+      color: #fff;
+      font-family: "Microsoft yahei"; }
+  .account h4 {
+    padding: 2.13333rem 0 0 2.13333rem;
+    line-height: 2.13333rem;
+    font-size: 1.13778rem;
+    font-family: "Microsoft yahei";
+    color: #fff;
+    font-weight: normal; }
+  .account h5 {
+    padding: 0 0 0 2.13333rem;
+    line-height: 2.13333rem;
+    font-size: 0.92444rem;
+    font-family: "Microsoft yahei";
+    color: #d4d4d2;
+    font-weight: normal; }
+  .account .account-from {
+    padding: 2.13333rem 2.13333rem 0; }
+    .account .account-from li {
+      overflow: hidden;
+      padding-top: 1.06667rem;
+      border-bottom: 1px solid #ccc;
+      height: 2.48889rem;
+      position: relative;
+      /**
+             placeholder color更改
+            */ }
+      .account .account-from li label {
+        float: left;
+        width: 23%;
+        color: #fff;
+        line-height: 2.48889rem;
+        height: 2.48889rem;
+        box-sizing: border-box;
+        padding-left: 0.53333rem;
+        position: relative; }
+        .account .account-from li label:before {
+          position: absolute;
+          right: 0;
+          top: 0;
+          display: block;
+          content: "";
+          width: 1.06667rem;
+          height: 2.48889rem;
+          background: url(./i/down.png) no-repeat center center;
+          background-size: 0.71111rem 0.71111rem; }
+      .account .account-from li .label-ctrl {
+        margin-left: 23%; }
+        .account .account-from li .label-ctrl input {
+          background: none;
+          border: none;
+          height: 2.48889rem;
+          line-height: 2.48889rem;
+          width: 100%;
+          box-sizing: border-box;
+          padding: 0 0 0 0.35556rem;
+          color: #fff;
+          font-size: 0.92444rem;
+          font-family: "Microsoft yahei"; }
+      .account .account-from li .inp {
+        background: none;
+        border: none;
+        height: 2.48889rem;
+        line-height: 2.48889rem;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 0 0 0.35556rem;
+        color: #fff;
+        font-size: 0.92444rem;
+        font-family: "Microsoft yahei"; }
+      .account .account-from li input::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: #fff; }
+      .account .account-from li input:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #fff; }
+      .account .account-from li input::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #fff; }
+      .account .account-from li input:-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: #fff; }
+      .account .account-from li span {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 2.48889rem;
+        line-height: 2.48889rem;
+        color: #fff;
+        font-family: "Microsoft yahei"; }
+      .account .account-from li span.def {
+        color: #d4d4d2; }
+      .account .account-from li i {
+        position: absolute;
+        right: 0.71111rem;
+        top: 1.77778rem;
+        z-index: 10;
+        width: 1.42222rem;
+        height: 1.42222rem;
+        background: url(./i/hide.png) no-repeat center center;
+        background-size: 1.42222rem 1.42222rem; }
+      .account .account-from li .show {
+        background: url(./i/show.png) no-repeat center center;
+        background-size: 1.42222rem 1.42222rem; }
+      .account .account-from li .btn {
+        display: block;
+        height: 2.48889rem;
+        line-height: 2.48889rem;
+        color: #3168ef;
+        background: #e5e5e5;
+        width: 100%;
+        text-align: center;
+        border: none;
+        border-radius: 1.24444rem;
+        font-size: 0.92444rem;
+        font-family: "Microsoft yahei"; }
+    .account .account-from .sp {
+      border: none;
+      margin-top: 1.42222rem; }
+    .account .account-from .other {
+      border: none;
+      height: 2.84444rem;
+      padding: 1.06667rem 0.53333rem 0; }
+      .account .account-from .other .xieyi {
+        float: left;
+        line-height: RM(24);
+        color: #d4d4d2;
+        font-size: 0.64rem; }
+        .account .account-from .other .xieyi em {
+          font-style: normal;
+          display: block;
+          color: #fff;
+          font-size: 0.64rem; }
+      .account .account-from .other .r2 {
+        float: right;
+        height: 2.13333rem;
+        line-height: 2.13333rem;
+        color: #fff; }
+      .account .account-from .other .r1 {
+        float: left;
+        height: 2.13333rem;
+        line-height: 2.13333rem;
+        color: #fff; }
+
+.forgot-password {
+  padding: 0.53333rem 0; }
+  .forgot-password .progress {
+    background: #e6e6e6;
+    height: 6.4rem;
+    overflow: hidden; }
+    .forgot-password .progress p {
+      float: left;
+      width: 35%; }
+    .forgot-password .progress span {
+      padding-top: 1.42222rem;
+      width: 5.33333rem;
+      text-align: center;
+      line-height: 2.84444rem; }
+      .forgot-password .progress span i {
+        display: block;
+        width: 1.77778rem;
+        margin: 0 auto;
+        height: 1.77778rem;
+        background: red; }
+    .forgot-password .progress .spn1 {
+      float: right; }
+    .forgot-password .progress em {
+      float: left;
+      width: 30%;
+      height: 3.2rem;
+      border-bottom: 1px dashed #666; }
+    .forgot-password .progress .spn2 {
+      float: left; }
+  .forgot-password ul li {
+    border-bottom: 1px solid #eee;
+    height: 2.48889rem;
+    overflow: hidden; }
+    .forgot-password ul li label {
+      float: left;
+      padding-left: 1.06667rem;
+      box-sizing: border-box;
+      height: 2.48889rem;
+      line-height: 2.48889rem;
+      width: 20%; }
+    .forgot-password ul li .label-ctrl {
+      margin-left: 20%; }
+      .forgot-password ul li .label-ctrl input {
+        width: 100%;
+        padding: 0.35556rem 0.53333rem;
+        box-sizing: border-box;
+        height: 2.48889rem;
+        font-size: 0.92444rem;
+        color: #333;
+        font-family: "Microsoft yahei";
+        background: none;
+        border: none; }
+      .forgot-password ul li .label-ctrl input::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: #333; }
+      .forgot-password ul li .label-ctrl input:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #333; }
+      .forgot-password ul li .label-ctrl input::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #333; }
+      .forgot-password ul li .label-ctrl input:-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: #333; }
+  .forgot-password ul li:last-child {
+    border: none;
+    margin: 0.53333rem 1.06667rem; }
+    .forgot-password ul li:last-child input {
+      background: #e5e5e5;
+      color: #fff;
+      border: none;
+      border-radius: 0.21333rem;
+      display: block;
+      width: 100%;
+      height: 2.48889rem;
+      font-family: "Microsoft yahei";
+      font-size: 0.92444rem;
+      cursor: pointer; }
+
+.search-page .search-input {
+  height: 3.55556rem;
+  background: #ccc;
+  padding: 0 0.53333rem;
+  position: relative; }
+  .search-page .search-input input {
+    background: #fff;
+    border-radius: 0.21333rem;
+    height: 2.13333rem;
+    line-height: 2.13333rem;
+    padding: 0.53333rem 0.53333rem 0.53333rem 1.77778rem;
+    font-size: 0.92444rem;
+    color: #333;
+    box-sizing: border-box;
+    border: none;
+    margin-top: 0.71111rem;
+    width: 100%; }
+  .search-page .search-input i {
+    position: absolute;
+    left: 1.06667rem;
+    top: 1.28rem;
+    z-index: 5;
+    width: 1.06667rem;
+    height: 1.06667rem;
+    background: url(./i/search.png) no-repeat center center;
+    background-size: 1.06667rem 1.06667rem; }
+
+.search-page .search-list {
+  padding-left: 0.71111rem; }
+  .search-page .search-list .ul {
+    margin-top: 0.35556rem; }
+    .search-page .search-list .ul a {
+      height: 2.66667rem;
+      overflow: hidden;
+      position: relative;
+      display: block;
+      border-bottom: 0.03556rem solid #ccc; }
+      .search-page .search-list .ul a em {
+        float: right;
+        width: 1.24444rem;
+        height: 1.24444rem;
+        margin: 0.71111rem 1.06667rem 0 0;
+        background: url(./i/select.png) no-repeat 0 0;
+        background-size: 1.24444rem 1.24444rem;
+        display: none; }
+      .search-page .search-list .ul a span {
+        display: block;
+        height: 2.63111rem;
+        line-height: 2.63111rem;
+        font-size: 0.92444rem;
+        color: #333;
+        font-family: "Microsoft yahei"; }
+    .search-page .search-list .ul .cur em {
+      display: block; }
+
+.unit-page .unit-line {
+  height: 0.35556rem;
+  background: #f7f6f6; }
+
+.unit-page .unit-list {
+  padding-left: 0.71111rem; }
+  .unit-page .unit-list .ul {
+    margin-top: 0.35556rem; }
+    .unit-page .unit-list .ul a {
+      height: 2.66667rem;
+      overflow: hidden;
+      position: relative;
+      display: block;
+      border-bottom: 0.03556rem solid #ccc; }
+      .unit-page .unit-list .ul a em {
+        float: right;
+        width: 1.24444rem;
+        height: 1.24444rem;
+        margin: 0.71111rem 1.06667rem 0 0;
+        background: url(./i/select.png) no-repeat 0 0;
+        background-size: 1.24444rem 1.24444rem;
+        display: none; }
+      .unit-page .unit-list .ul a span {
+        display: block;
+        height: 2.63111rem;
+        line-height: 2.63111rem;
+        font-size: 0.92444rem;
+        color: #333;
+        font-family: "Microsoft yahei"; }
+    .unit-page .unit-list .ul .cur em {
+      display: block; }
+
+.market-list {
+  background: #ccc; }
+  .market-list ul li {
+    margin-bottom: 0.07111rem;
+    height: 3.55556rem;
+    background: #fff;
+    overflow: hidden;
+    padding: 0 1.06667rem; }
+    .market-list ul li .percent {
+      float: right;
+      background: #e83131;
+      width: 3.55556rem;
+      height: 1.24444rem;
+      line-height: 1.24444rem;
+      margin-top: 1.15556rem;
+      text-align: center;
+      color: #fff;
+      font-size: 0.85333rem;
+      font-family: Arial;
+      border-radius: 0.21333rem; }
+    .market-list ul li .m-l-info {
+      padding: 0.71111rem 5.33333rem 0 0; }
+      .market-list ul li .m-l-info p {
+        height: 1.06667rem;
+        overflow: hidden; }
+        .market-list ul li .m-l-info p span {
+          float: left;
+          height: 1.06667rem;
+          line-height: 1.06667rem;
+          font-family: "Microsoft yahei";
+          font-size: 0.71111rem;
+          color: #666; }
+          .market-list ul li .m-l-info p span b {
+            font-size: 0.78222rem;
+            color: #333; }
+        .market-list ul li .m-l-info p .fr {
+          float: right; }
+
+.home .banner {
+  height: 11.73333rem; }
+  .home .banner .swiper-container {
+    height: 11.73333rem; }
+    .home .banner .swiper-container .swiper-slide {
+      height: 11.73333rem;
+      background: #f60; }
+      .home .banner .swiper-container .swiper-slide a {
+        display: block;
+        height: 11.73333rem; }
+      .home .banner .swiper-container .swiper-slide img {
+        display: block;
+        height: 11.73333rem; }
+
+.currency-bar {
+  height: 2.48889rem;
+  padding: 0 1.06667rem; }
+  .currency-bar h3 {
+    float: left;
+    height: 2.48889rem; }
+    .currency-bar h3 span {
+      float: left;
+      height: 2.48889rem;
+      line-height: 2.48889rem;
+      font-size: 1.06667rem;
+      font-family: Arial;
+      margin-right: 1.06667rem; }
+    .currency-bar h3 i {
+      float: left;
+      width: 1.06667rem;
+      height: 1.06667rem;
+      margin-top: 0.71111rem;
+      background: url(./i/down2.png) no-repeat 0 0;
+      background-size: 0.88889rem 0.88889rem; }
+  .currency-bar p {
+    float: right;
+    height: 2.48889rem; }
+    .currency-bar p em {
+      float: right;
+      height: 2.48889rem;
+      line-height: 2.48889rem;
+      font-size: 0.64rem;
+      font-style: normal;
+      font-family: Arial;
+      color: #d81e06; }
+      .currency-bar p em i {
+        float: right;
+        width: 0.71111rem;
+        height: 2.48889rem;
+        background: url(./i/downs.png) no-repeat center 0.81778rem;
+        background-size: 0.71111rem 0.71111rem; }
+    .currency-bar p .normal {
+      color: #333; }
+      .currency-bar p .normal i {
+        display: none; }
+    .currency-bar p .green {
+      color: #1afa29; }
+      .currency-bar p .green i {
+        background: url(./i/ups.png) no-repeat center 0.81778rem;
+        background-size: 0.71111rem 0.71111rem; }
+    .currency-bar p span {
+      float: right;
+      height: 2.48889rem;
+      line-height: 2.48889rem;
+      margin-right: 1.06667rem;
+      color: #d81e06;
+      font-family: Arial; }
+
+.trade-line {
+  height: 0.35556rem;
+  background: #f7f6f6; }
+
+.trade .trade-filter {
+  height: 2.48889rem;
+  border-bottom: 0.03556rem solid #7f90b8; }
+  .trade .trade-filter h6 {
+    float: left;
+    width: 33.3%;
+    height: 2.48889rem;
+    text-align: center;
+    line-height: 2.48889rem;
+    vertical-align: middle;
+    font-size: 0.85333rem;
+    font-family: "Microsoft yahei";
+    color: #666; }
+    .trade .trade-filter h6 input {
+      display: inline-block;
+      width: 0.88889rem;
+      height: 0.88889rem;
+      vertical-align: middle;
+      margin: -0.10667rem 0.35556rem 0 0; }
+    .trade .trade-filter h6 i {
+      display: inline-block;
+      vertical-align: middle;
+      width: 0.71111rem;
+      height: 0.71111rem;
+      background: url(./i/down2.png) no-repeat center center;
+      background-size: 0.71111rem 0.71111rem;
+      margin: -0.10667rem 0 0 0.35556rem; }
+
+.trade-list ul li {
+  height: 5.33333rem;
+  border-bottom: 0.24889rem solid #f7f6f6;
+  position: relative; }
+  .trade-list ul li a {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10; }
+  .trade-list ul li .hd {
+    height: 2.48889rem;
+    padding-right: 0.88889rem; }
+    .trade-list ul li .hd span {
+      float: right;
+      font-style: normal;
+      background: #16c121;
+      width: 3.55556rem;
+      line-height: 1.42222rem;
+      text-align: center;
+      border-radius: 0.35556rem;
+      text-align: center;
+      color: #fff;
+      font-size: 0.85333rem;
+      margin-top: 0.88889rem;
+      font-family: "Microsoft yahei"; }
+    .trade-list ul li .hd p {
+      float: left;
+      margin: 0.53333rem 0 0 0;
+      height: 1.92rem;
+      font-family: "Microsoft yahei"; }
+      .trade-list ul li .hd p:before {
+        float: left;
+        content: "";
+        display: block;
+        width: 0.28444rem;
+        height: 1.42222rem;
+        background: #16c121;
+        margin-top: 0.24889rem; }
+      .trade-list ul li .hd p em {
+        float: left;
+        width: 0.88889rem;
+        height: 0.88889rem;
+        background: url(./i/photo.png) no-repeat 0 0;
+        background-size: 0.88889rem 0.88889rem;
+        margin: 0.46222rem 0 0 0.53333rem; }
+      .trade-list ul li .hd p var {
+        float: left;
+        height: 1.42222rem;
+        line-height: 1.49333rem;
+        font-size: 0.85333rem;
+        font-style: normal;
+        margin: 0.24889rem 0 0 0.53333rem;
+        color: #bfbfbf;
+        overflow: hidden; }
+      .trade-list ul li .hd p i {
+        float: left;
+        width: 0.88889rem;
+        height: 0.88889rem;
+        background: url(./i/hg.png) no-repeat 0 0;
+        background-size: 0.88889rem 0.88889rem;
+        margin: 0.49778rem 0 0 0.53333rem; }
+      .trade-list ul li .hd p b {
+        font-weight: normal;
+        border: 0.03556rem solid #16c121;
+        height: 1.06667rem;
+        line-height: 1.13778rem;
+        overflow: hidden;
+        padding: 0 0.35556rem;
+        color: #16c121;
+        float: left;
+        font-size: 0.78222rem;
+        margin: 0.46222rem 0 0 0.71111rem;
+        border-radius: 0.17778rem; }
+  .trade-list ul li .hds {
+    height: 2.48889rem;
+    padding-right: 0.88889rem; }
+    .trade-list ul li .hds span {
+      float: right;
+      font-style: normal;
+      text-align: center;
+      color: #f60;
+      font-size: 0.78222rem;
+      font-family: "Microsoft yahei";
+      height: 1.42222rem;
+      line-height: 1.42222rem;
+      margin: 0.81778rem 0.35556rem 0 0; }
+    .trade-list ul li .hds p {
+      float: left;
+      margin: 0.53333rem 0 0 0;
+      height: 1.92rem;
+      font-family: "Microsoft yahei"; }
+      .trade-list ul li .hds p:before {
+        float: left;
+        content: "买";
+        display: block;
+        width: 1.42222rem;
+        height: 1.28rem;
+        line-height: 1.28rem;
+        background: #16c121;
+        margin-top: 0.24889rem;
+        font-size: 0.78222rem;
+        color: #fff;
+        text-align: center;
+        border-radius: 0 0.17778rem 0.17778rem 0; }
+      .trade-list ul li .hds p em {
+        float: left;
+        height: 1.42222rem;
+        line-height: 1.49333rem;
+        margin: 0.24889rem 0 0 0.53333rem;
+        font-style: normal; }
+      .trade-list ul li .hds p var {
+        float: left;
+        height: 1.42222rem;
+        line-height: 1.42222rem;
+        font-size: 0.85333rem;
+        font-style: normal;
+        margin: 0.24889rem 0 0 0.53333rem;
+        color: #bfbfbf;
+        overflow: hidden; }
+  .trade-list ul li .bd {
+    padding-top: 0.35556rem;
+    font-family: "Microsoft yahei"; }
+    .trade-list ul li .bd p {
+      float: left;
+      width: 33.3%;
+      box-sizing: border-box;
+      padding-left: 0.71111rem;
+      height: 1.70667rem;
+      font-size: 0.78222rem;
+      font-family: "Microsoft yahei";
+      color: #bfbfbf;
+      position: relative; }
+      .trade-list ul li .bd p:before {
+        content: "";
+        position: absolute;
+        width: 0.07111rem;
+        height: 1.6rem;
+        background: #ccc;
+        left: 0;
+        top: 0.10667rem; }
+      .trade-list ul li .bd p span {
+        display: block;
+        line-height: 0.85333rem;
+        color: #666; }
+      .trade-list ul li .bd p var {
+        font-style: normal;
+        display: block;
+        line-height: 0.85333rem;
+        font-size: 0.64rem;
+        padding-left: 0.03556rem; }
+    .trade-list ul li .bd p:first-child:before {
+      display: none; }
+  .trade-list ul li.cur .hd span, .trade-list ul li.sell .hd span {
+    background: #d81e06; }
+  .trade-list ul li.cur .hd p:before, .trade-list ul li.sell .hd p:before {
+    background: #d81e06; }
+  .trade-list ul li.cur .hds p:before, .trade-list ul li.sell .hds p:before {
+    background: #d81e06; }
+
+.doit .doit-info dl dt {
+  height: 3.2rem;
+  padding-right: 0.88889rem;
+  border-bottom: 0.03556rem solid #ccc; }
+  .doit .doit-info dl dt span {
+    float: right;
+    height: 3.2rem; }
+    .doit .doit-info dl dt span i {
+      width: 1.42222rem;
+      height: 1.42222rem;
+      float: right;
+      margin: 0.88889rem 0.17778rem 0 0; }
+    .doit .doit-info dl dt span .wx {
+      background: url(./i/wxpay.png) no-repeat center center;
+      background-size: 0.96rem 0.96rem; }
+    .doit .doit-info dl dt span .alipay {
+      background: url(./i/alipay.png) no-repeat center center;
+      background-size: 0.96rem 0.96rem; }
+    .doit .doit-info dl dt span .yh {
+      background: url(./i/yhk.png) no-repeat center center;
+      background-size: 1.42222rem 1.42222rem;
+      margin: 0.94222rem 0.32rem 0 0; }
+  .doit .doit-info dl dt p {
+    float: left;
+    margin: 0.53333rem 0 0 0;
+    height: 1.92rem;
+    font-family: "Microsoft yahei"; }
+    .doit .doit-info dl dt p:before {
+      float: left;
+      content: "";
+      display: block;
+      width: 0.28444rem;
+      height: 1.42222rem;
+      background: #16c121;
+      margin-top: 0.24889rem; }
+    .doit .doit-info dl dt p em {
+      float: left;
+      width: 0.88889rem;
+      height: 0.88889rem;
+      background: url(./i/photo.png) no-repeat 0 0;
+      background-size: 0.88889rem 0.88889rem;
+      margin: 0.46222rem 0 0 0.53333rem; }
+    .doit .doit-info dl dt p var {
+      float: left;
+      height: 1.42222rem;
+      line-height: 1.49333rem;
+      font-size: 0.85333rem;
+      font-style: normal;
+      margin: 0.24889rem 0 0 0.53333rem;
+      color: #bfbfbf;
+      overflow: hidden; }
+    .doit .doit-info dl dt p i {
+      float: left;
+      width: 0.88889rem;
+      height: 0.88889rem;
+      background: url(./i/hg.png) no-repeat 0 0;
+      background-size: 0.88889rem 0.88889rem;
+      margin: 0.53333rem 0 0 0.53333rem; }
+    .doit .doit-info dl dt p b {
+      font-weight: normal;
+      height: 1.42222rem;
+      line-height: 1.42222rem;
+      overflow: hidden;
+      color: #bfbfbf;
+      float: left;
+      font-size: 0.78222rem;
+      margin: 0.24889rem 0 0 0.53333rem; }
+
+.doit .doit-info dl dd {
+  height: 3.2rem;
+  border-bottom: 0.03556rem solid #ccc;
+  padding: 0 0.88889rem; }
+  .doit .doit-info dl dd label, .doit .doit-info dl dd span {
+    float: left;
+    height: 3.2rem;
+    width: 5.33333rem;
+    line-height: 3.2rem;
+    font-family: "Microsoft yahei";
+    font-size: 0.85333rem;
+    color: #666; }
+  .doit .doit-info dl dd span {
+    float: right;
+    text-align: right; }
+  .doit .doit-info dl dd .num {
+    margin: 0 5.33333rem; }
+    .doit .doit-info dl dd .num p {
+      height: 3.2rem;
+      width: 5.33333rem;
+      line-height: 3.2rem;
+      font-family: "Microsoft yahei";
+      font-size: 0.92444rem;
+      color: #666; }
+    .doit .doit-info dl dd .num input {
+      height: 3.2rem;
+      width: 5.33333rem;
+      line-height: 3.2rem;
+      font-family: "Microsoft yahei";
+      font-size: 0.92444rem;
+      color: #666;
+      width: 100%;
+      border: none;
+      background: none;
+      box-sizing: border-box; }
+
+.doit .doit-info .subFrom {
+  padding: 1.06667rem; }
+  .doit .doit-info .subFrom input {
+    height: 2.48889rem;
+    line-height: 2.48889rem;
+    text-align: center;
+    font-size: 0.92444rem;
+    color: #fff;
+    background: #3168ef;
+    display: block;
+    width: 100%;
+    border: none;
+    font-family: "Microsoft yahei";
+    border-radius: 1.24444rem;
+    cursor: pointer; }
+
+.createList {
+  display: block;
+  position: fixed;
+  right: 1.06667rem;
+  bottom: 5.33333rem;
+  width: 2.48889rem;
+  height: 2.48889rem;
+  border-radius: 50%;
+  z-index: 1000;
+  background: url(./i/add.png) no-repeat center center;
+  background-size: 2.48889rem 2.48889rem; }

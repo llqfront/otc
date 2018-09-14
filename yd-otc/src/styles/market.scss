@@ -1,0 +1,52 @@
+@charset "UTF-8";
+$ff:"Microsoft yahei";
+$color:#7f90b8;
+$c3:#333;
+$c6:#666;
+.market-list{
+    background: #ccc;
+    ul {
+        li {
+            margin-bottom:Rm(2);
+            height:Rm(100);
+            background: #fff;
+            overflow: hidden;
+            padding:0 Rm(30);
+            .percent{
+                float:right;
+                background: #e83131;
+                width:Rm(100);
+                height:Rm(35);
+                line-height: Rm(35);
+                margin-top:Rm(32.5);
+                text-align: center;
+                color:#fff;
+                font-size:Rm(24);
+                font-family: Arial;
+                border-radius: Rm(6);
+            }
+            .m-l-info {
+                padding:Rm(20) Rm(150) 0 0;
+                p {
+                    height:Rm(30);
+                    overflow: hidden;
+                    span {
+                        float:left;
+                        height:Rm(30);
+                        line-height: Rm(30);
+                        font-family: $ff;
+                        font-size:Rm(20);
+                        color:$c6;
+                        b {
+                            font-size:Rm(22);
+                            color:$c3;
+                        }
+                    }
+                    .fr {
+                        float:right;
+                    }
+                }
+            }
+        }
+    }
+}

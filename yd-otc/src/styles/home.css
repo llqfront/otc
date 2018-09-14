@@ -1,0 +1,13 @@
+.home .banner {
+  height: Rm(330); }
+  .home .banner .swiper-container {
+    height: Rm(330); }
+    .home .banner .swiper-container .swiper-slide {
+      height: Rm(330);
+      background: #f60; }
+      .home .banner .swiper-container .swiper-slide a {
+        display: block;
+        height: Rm(330); }
+      .home .banner .swiper-container .swiper-slide img {
+        display: block;
+        height: Rm(330); }

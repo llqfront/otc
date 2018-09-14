@@ -1,0 +1,98 @@
+@charset "UTF-8";
+$ff:"Microsoft yahei";
+.user-nav {
+    .list {
+        height:Rm(90);
+        a {
+            color:#7f90b8;
+            float:left;
+            // width: 33.3%;
+            text-align: center;
+            line-height: Rm(90);
+            border-bottom:Rm(1) solid #7f90b8;
+            font-family: $ff;
+        }
+        .active {
+            color:#1d5fff;
+            border-bottom:Rm(1) solid #1d5fff;
+        }
+    }
+}
+.user-con {
+    padding:Rm(15) Rm(30);
+    .h3 {
+        height:Rm(70);
+        line-height: Rm(70);
+        border-bottom:Rm(1) solid #eee;
+        font-size:Rm(26);
+        color:#7f90b8;
+        font-family: $ff;
+    }
+    .info-ul {
+        padding:Rm(15) 0 Rm(50);
+        li {
+            height:Rm(70);
+            padding-top:Rm(20);
+            .label {
+                float:left;
+                width:30%;
+                height:Rm(70);
+                line-height: Rm(70);
+                font-size:Rm(26);
+                color:#7f90b8;
+                font-family: $ff;
+            }
+            .label-ctrl {
+                margin-left:30%;
+                p {
+                    height:Rm(70);
+                    line-height: Rm(70);
+                    font-size:Rm(26);
+                    color:#7f90b8;
+                    font-family: $ff;
+                    a {
+                        margin-left:Rm(40);
+                        color:#1d5fff;
+                        font-family: $ff;
+                    }
+                }
+                select {
+                    border:1px solid #7f90b8;
+                    height:Rm(50);
+                    margin-top:Rm(10);
+                    box-sizing: border-box;
+                    background:none;
+                    outline:none;
+                    padding:0 Rm(30);
+                }
+                .card {
+                    border:1px solid #ced4da;
+                    height:Rm(70);
+                    margin-top:Rm(10);
+                    border-radius: Rm(6);
+                    box-sizing: border-box;
+                    padding:0 Rm(15);
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .info-ol {
+        li {
+            height:Rm(70);
+            padding-top:Rm(10);
+            span {
+                float:left;
+                width:27%;
+                height:Rm(70);
+                line-height: Rm(70);
+                font-size:Rm(26);
+                color:#7f90b8;
+                font-family: $ff;
+            }
+            span:first-child{
+                width:46%;
+            }
+        }
+    }
+}

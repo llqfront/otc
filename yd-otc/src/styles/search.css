@@ -1,0 +1,86 @@
+.search-page .search-input {
+  height: Rm(100);
+  background: #ccc;
+  padding: 0 Rm(15);
+  position: relative; }
+  .search-page .search-input input {
+    background: #fff;
+    border-radius: Rm(6);
+    height: Rm(60);
+    line-height: Rm(60);
+    padding: Rm(15) Rm(15) Rm(15) Rm(50);
+    font-size: Rm(26);
+    color: #333;
+    box-sizing: border-box;
+    border: none;
+    margin-top: Rm(20);
+    width: 100%; }
+  .search-page .search-input i {
+    position: absolute;
+    left: Rm(30);
+    top: Rm(36);
+    z-index: 5;
+    width: Rm(30);
+    height: Rm(30);
+    background: url(./i/search.png) no-repeat center center;
+    background-size: Rm(30) Rm(30); }
+
+.search-page .search-list {
+  padding-left: Rm(20); }
+  .search-page .search-list .ul {
+    margin-top: Rm(10); }
+    .search-page .search-list .ul a {
+      height: Rm(75);
+      overflow: hidden;
+      position: relative;
+      display: block;
+      border-bottom: Rm(1) solid #ccc; }
+      .search-page .search-list .ul a em {
+        float: right;
+        width: Rm(35);
+        height: Rm(35);
+        margin: Rm(20) Rm(30) 0 0;
+        background: url(./i/select.png) no-repeat 0 0;
+        background-size: Rm(35) Rm(35);
+        display: none; }
+      .search-page .search-list .ul a span {
+        display: block;
+        height: Rm(74);
+        line-height: Rm(74);
+        font-size: Rm(26);
+        color: #333;
+        font-family: "Microsoft yahei"; }
+    .search-page .search-list .ul .cur em {
+      display: block; }
+
+.unit-page .unit-line {
+  height: Rm(10);
+  background: #f7f6f6; }
+
+.unit-page .unit-list {
+  padding-left: Rm(20); }
+  .unit-page .unit-list .ul {
+    margin-top: Rm(10); }
+    .unit-page .unit-list .ul a {
+      height: Rm(75);
+      overflow: hidden;
+      position: relative;
+      display: block;
+      border-bottom: Rm(1) solid #ccc; }
+      .unit-page .unit-list .ul a em {
+        float: right;
+        width: Rm(35);
+        height: Rm(35);
+        margin: Rm(20) Rm(30) 0 0;
+        background: url(./i/select.png) no-repeat 0 0;
+        background-size: Rm(35) Rm(35);
+        display: none; }
+      .unit-page .unit-list .ul a span {
+        display: block;
+        height: Rm(74);
+        line-height: Rm(74);
+        font-size: Rm(26);
+        color: #333;
+        font-family: "Microsoft yahei"; }
+    .unit-page .unit-list .ul .cur em {
+      display: block; }
